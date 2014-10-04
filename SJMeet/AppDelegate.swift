@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("OhO2pq62itytSvN4qtjDsA66peZ59ld7curwHqyH", clientKey: "qaJV5iRfFoRAoIwbaJcU9JsI21H5fqJQtuP5j1HS")
+        
+        var object = PFObject(className: "Event")
+        object.addObject("Cal Hacks", forKey: "name")
+        // object.addObject("October 3, 2014", forKey: "date")
+        object.saveInBackground()
+        
         return true
     }
 

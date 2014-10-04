@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9057FADA-BD33-4845-B7F7-E60A4D37EA71</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SJMeet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>78572DCEB27C951906AE9C75560F9283F151EB19</key>
+		<string>https://github.com/wichellemu/SJMeet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SJMeet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>78572DCEB27C951906AE9C75560F9283F151EB19</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wichellemu/SJMeet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>78572DCEB27C951906AE9C75560F9283F151EB19</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>78572DCEB27C951906AE9C75560F9283F151EB19</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SJMeet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

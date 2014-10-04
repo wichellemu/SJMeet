@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AD08D319DFE68C0025A3D5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08D119DFE68C0025A3D5 /* Bolts.framework */; };
+		23AD08D419DFE68C0025A3D5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08D219DFE68C0025A3D5 /* Parse.framework */; };
+		23AD08D619DFE6EF0025A3D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08D519DFE6EF0025A3D5 /* AudioToolbox.framework */; };
+		23AD08D819DFE6F50025A3D5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08D719DFE6F50025A3D5 /* CFNetwork.framework */; };
+		23AD08DA19DFE6FD0025A3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08D919DFE6FD0025A3D5 /* CoreGraphics.framework */; };
+		23AD08DC19DFE70F0025A3D5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08DB19DFE70F0025A3D5 /* CoreLocation.framework */; };
+		23AD08DE19DFE71E0025A3D5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08DD19DFE71E0025A3D5 /* libz.dylib */; };
+		23AD08E019DFE7260025A3D5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08DF19DFE7260025A3D5 /* MobileCoreServices.framework */; };
+		23AD08E219DFE72D0025A3D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E119DFE72D0025A3D5 /* QuartzCore.framework */; };
+		23AD08E419DFE7350025A3D5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E319DFE7350025A3D5 /* Security.framework */; };
+		23AD08E619DFE73D0025A3D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E519DFE73D0025A3D5 /* StoreKit.framework */; };
+		23AD08E819DFE7450025A3D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */; };
 		A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E519DFD631008948C9 /* AppDelegate.swift */; };
 		A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */; };
 		A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */; };
@@ -28,6 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23AD08D119DFE68C0025A3D5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		23AD08D219DFE68C0025A3D5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		23AD08D519DFE6EF0025A3D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		23AD08D719DFE6F50025A3D5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		23AD08D919DFE6FD0025A3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		23AD08DB19DFE70F0025A3D5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		23AD08DD19DFE71E0025A3D5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		23AD08DF19DFE7260025A3D5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		23AD08E119DFE72D0025A3D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		23AD08E319DFE7350025A3D5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		23AD08E519DFE73D0025A3D5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		23AD08E919DFE89F0025A3D5 /* SJMeet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJMeet-Bridging-Header.h"; sourceTree = "<group>"; };
 		A02B47E019DFD631008948C9 /* SJMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02B47E419DFD631008948C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02B47E519DFD631008948C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +73,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AD08E819DFE7450025A3D5 /* SystemConfiguration.framework in Frameworks */,
+				23AD08E619DFE73D0025A3D5 /* StoreKit.framework in Frameworks */,
+				23AD08E419DFE7350025A3D5 /* Security.framework in Frameworks */,
+				23AD08E219DFE72D0025A3D5 /* QuartzCore.framework in Frameworks */,
+				23AD08E019DFE7260025A3D5 /* MobileCoreServices.framework in Frameworks */,
+				23AD08DE19DFE71E0025A3D5 /* libz.dylib in Frameworks */,
+				23AD08DC19DFE70F0025A3D5 /* CoreLocation.framework in Frameworks */,
+				23AD08DA19DFE6FD0025A3D5 /* CoreGraphics.framework in Frameworks */,
+				23AD08D819DFE6F50025A3D5 /* CFNetwork.framework in Frameworks */,
+				23AD08D619DFE6EF0025A3D5 /* AudioToolbox.framework in Frameworks */,
+				23AD08D419DFE68C0025A3D5 /* Parse.framework in Frameworks */,
+				23AD08D319DFE68C0025A3D5 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +101,18 @@
 		A02B47D719DFD631008948C9 = {
 			isa = PBXGroup;
 			children = (
+				23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */,
+				23AD08E519DFE73D0025A3D5 /* StoreKit.framework */,
+				23AD08E319DFE7350025A3D5 /* Security.framework */,
+				23AD08E119DFE72D0025A3D5 /* QuartzCore.framework */,
+				23AD08DF19DFE7260025A3D5 /* MobileCoreServices.framework */,
+				23AD08DD19DFE71E0025A3D5 /* libz.dylib */,
+				23AD08DB19DFE70F0025A3D5 /* CoreLocation.framework */,
+				23AD08D919DFE6FD0025A3D5 /* CoreGraphics.framework */,
+				23AD08D719DFE6F50025A3D5 /* CFNetwork.framework */,
+				23AD08D519DFE6EF0025A3D5 /* AudioToolbox.framework */,
+				23AD08D119DFE68C0025A3D5 /* Bolts.framework */,
+				23AD08D219DFE68C0025A3D5 /* Parse.framework */,
 				A02B480A19DFD9DF008948C9 /* MainMenuMap */,
 				A02B47E219DFD631008948C9 /* SJMeet */,
 				A02B47FB19DFD631008948C9 /* SJMeetTests */,
@@ -91,6 +140,7 @@
 				A02B47F119DFD631008948C9 /* LaunchScreen.xib */,
 				A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */,
 				A02B47E319DFD631008948C9 /* Supporting Files */,
+				23AD08E919DFE89F0025A3D5 /* SJMeet-Bridging-Header.h */,
 			);
 			path = SJMeet;
 			sourceTree = "<group>";
@@ -354,9 +404,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SJMeet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SJMeet/SJMeet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -364,9 +421,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SJMeet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SJMeet/SJMeet-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -423,6 +486,7 @@
 				A02B480419DFD631008948C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A02B480519DFD631008948C9 /* Build configuration list for PBXNativeTarget "SJMeetTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +495,7 @@
 				A02B480719DFD631008948C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
