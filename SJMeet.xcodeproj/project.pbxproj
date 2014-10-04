@@ -27,7 +27,12 @@
 		A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02B47F119DFD631008948C9 /* LaunchScreen.xib */; };
 		A02B47FF19DFD631008948C9 /* SJMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47FE19DFD631008948C9 /* SJMeetTests.swift */; };
 		A0F55B8219DFFF25005AA968 /* MainMenuMapBlurred.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */; };
-		A0F55B8319DFFF25005AA968 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8119DFFF25005AA968 /* Settings.png */; };
+		A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55B8419E003A3005AA968 /* SettingsViewController.swift */; };
+		A0F55B8819E02071005AA968 /* SettingsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8719E02071005AA968 /* SettingsBtn.png */; };
+		A0F55B8A19E021E2005AA968 /* NavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8919E021E2005AA968 /* NavBar.png */; };
+		A0F55B8D19E02BBE005AA968 /* EventsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8B19E02BBE005AA968 /* EventsBtn.png */; };
+		A0F55B8E19E02BBE005AA968 /* InteractiveMapBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8C19E02BBE005AA968 /* InteractiveMapBtn.png */; };
+		A0F55B9019E02F6D005AA968 /* BackBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8F19E02F6D005AA968 /* BackBtn.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +71,12 @@
 		A02B47FD19DFD631008948C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02B47FE19DFD631008948C9 /* SJMeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJMeetTests.swift; sourceTree = "<group>"; };
 		A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuMapBlurred.png; sourceTree = "<group>"; };
-		A0F55B8119DFFF25005AA968 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		A0F55B8419E003A3005AA968 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A0F55B8719E02071005AA968 /* SettingsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBtn.png; sourceTree = "<group>"; };
+		A0F55B8919E021E2005AA968 /* NavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBar.png; sourceTree = "<group>"; };
+		A0F55B8B19E02BBE005AA968 /* EventsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EventsBtn.png; sourceTree = "<group>"; };
+		A0F55B8C19E02BBE005AA968 /* InteractiveMapBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InteractiveMapBtn.png; sourceTree = "<group>"; };
+		A0F55B8F19E02F6D005AA968 /* BackBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackBtn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +131,10 @@
 		A02B47E219DFD631008948C9 /* SJMeet */ = {
 			isa = PBXGroup;
 			children = (
-				A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */,
-				A0F55B8119DFFF25005AA968 /* Settings.png */,
 				A02B480819DFD8F9008948C9 /* Images */,
 				A02B47E519DFD631008948C9 /* AppDelegate.swift */,
 				A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */,
+				A0F55B8419E003A3005AA968 /* SettingsViewController.swift */,
 				A02B47EC19DFD631008948C9 /* Main.storyboard */,
 				A02B47EF19DFD631008948C9 /* Images.xcassets */,
 				A02B47F119DFD631008948C9 /* LaunchScreen.xib */,
@@ -164,6 +173,12 @@
 		A02B480819DFD8F9008948C9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */,
+				A0F55B8719E02071005AA968 /* SettingsBtn.png */,
+				A0F55B8B19E02BBE005AA968 /* EventsBtn.png */,
+				A0F55B8C19E02BBE005AA968 /* InteractiveMapBtn.png */,
+				A0F55B8F19E02F6D005AA968 /* BackBtn.png */,
+				A0F55B8919E021E2005AA968 /* NavBar.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -267,9 +282,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F55B8319DFFF25005AA968 /* Settings.png in Resources */,
+				A0F55B8A19E021E2005AA968 /* NavBar.png in Resources */,
+				A0F55B8D19E02BBE005AA968 /* EventsBtn.png in Resources */,
 				A02B47EE19DFD631008948C9 /* Main.storyboard in Resources */,
 				A0F55B8219DFFF25005AA968 /* MainMenuMapBlurred.png in Resources */,
+				A0F55B8819E02071005AA968 /* SettingsBtn.png in Resources */,
+				A0F55B8E19E02BBE005AA968 /* InteractiveMapBtn.png in Resources */,
+				A0F55B9019E02F6D005AA968 /* BackBtn.png in Resources */,
 				A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */,
 				A02B47F019DFD631008948C9 /* Images.xcassets in Resources */,
 			);
@@ -292,6 +311,7 @@
 				A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */,
 				A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */,
 				A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */,
+				A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

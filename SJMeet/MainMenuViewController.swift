@@ -11,6 +11,15 @@ import UIKit
 class MainMenuViewController: UIViewController {
     @IBOutlet weak var mapBackground: UIImageView!
 
+    @IBOutlet weak var interestsBtn: UIButton!
+    @IBOutlet weak var eventsBtn: UIButton!
+    @IBOutlet weak var interactiveMapBtn: UIButton!
+    @IBOutlet weak var settingsBtn: UIButton!
+    
+    @IBAction func settingsTapped(sender: AnyObject) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
