@@ -101,22 +101,11 @@
 		A02B47D719DFD631008948C9 = {
 			isa = PBXGroup;
 			children = (
-				23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */,
-				23AD08E519DFE73D0025A3D5 /* StoreKit.framework */,
-				23AD08E319DFE7350025A3D5 /* Security.framework */,
-				23AD08E119DFE72D0025A3D5 /* QuartzCore.framework */,
-				23AD08DF19DFE7260025A3D5 /* MobileCoreServices.framework */,
-				23AD08DD19DFE71E0025A3D5 /* libz.dylib */,
-				23AD08DB19DFE70F0025A3D5 /* CoreLocation.framework */,
-				23AD08D919DFE6FD0025A3D5 /* CoreGraphics.framework */,
-				23AD08D719DFE6F50025A3D5 /* CFNetwork.framework */,
-				23AD08D519DFE6EF0025A3D5 /* AudioToolbox.framework */,
-				23AD08D119DFE68C0025A3D5 /* Bolts.framework */,
-				23AD08D219DFE68C0025A3D5 /* Parse.framework */,
 				A02B480A19DFD9DF008948C9 /* MainMenuMap */,
 				A02B47E219DFD631008948C9 /* SJMeet */,
 				A02B47FB19DFD631008948C9 /* SJMeetTests */,
 				A02B47E119DFD631008948C9 /* Products */,
+				B9D4DD6219DFFB4C008D562F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +165,25 @@
 				A02B480919DFD905008948C9 /* MainMenuMap */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		B9D4DD6219DFFB4C008D562F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */,
+				23AD08E519DFE73D0025A3D5 /* StoreKit.framework */,
+				23AD08E319DFE7350025A3D5 /* Security.framework */,
+				23AD08E119DFE72D0025A3D5 /* QuartzCore.framework */,
+				23AD08DF19DFE7260025A3D5 /* MobileCoreServices.framework */,
+				23AD08DD19DFE71E0025A3D5 /* libz.dylib */,
+				23AD08DB19DFE70F0025A3D5 /* CoreLocation.framework */,
+				23AD08D919DFE6FD0025A3D5 /* CoreGraphics.framework */,
+				23AD08D719DFE6F50025A3D5 /* CFNetwork.framework */,
+				23AD08D519DFE6EF0025A3D5 /* AudioToolbox.framework */,
+				23AD08D119DFE68C0025A3D5 /* Bolts.framework */,
+				23AD08D219DFE68C0025A3D5 /* Parse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
