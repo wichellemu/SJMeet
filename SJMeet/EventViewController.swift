@@ -74,7 +74,11 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
         
-        let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
+        var detailedEventVC = DetailedEventViewController(nibName: "DetailedEventViewController", bundle: nil)
+        detailedEventVC.eventID = events[indexPath.row].objectId
+        self.presentViewController(detailedEventVC, animated: true, completion: nil)
+        
+        /* let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addAction(UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Default,
@@ -82,7 +86,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 (alert: UIAlertAction!) in println("An alert of type \(alert.style.hashValue) was tapped!")
         }))
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: nil) */
         
     }
     

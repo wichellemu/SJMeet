@@ -44,11 +44,14 @@ class CreateEventController: UIViewController {
                 (success: Bool!, error: NSError!) -> Void in
                 if (success != nil) {
                     NSLog("Object created!")
+                    // Then you need to redirect them to event page
+                    var detailedEventVC = DetailedEventViewController(nibName: "DetailedEventViewController", bundle: nil)
+                    detailedEventVC.eventID = event.objectId
+                    self.presentViewController(detailedEventVC, animated: true, completion: nil)
                 } else {
                     NSLog("%@", error)
                 }
             }
-            // Then you need to redirect them to event page
         }
     }
     

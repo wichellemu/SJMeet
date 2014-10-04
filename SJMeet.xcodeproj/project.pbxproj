@@ -21,6 +21,8 @@
 		23AD08E819DFE7450025A3D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */; };
 		23AD08F619E052F20025A3D5 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD08F519E052F20025A3D5 /* EventViewController.swift */; };
 		23AD08F819E05F110025A3D5 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */; };
+		23AD08FA19E09AE10025A3D5 /* DetailedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD08F919E09AE00025A3D5 /* DetailedEventViewController.swift */; };
+		23AD08FE19E0A0580025A3D5 /* DetailedEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */; };
 		A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E519DFD631008948C9 /* AppDelegate.swift */; };
 		A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */; };
 		A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */; };
@@ -63,6 +65,8 @@
 		23AD08E919DFE89F0025A3D5 /* SJMeet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJMeet-Bridging-Header.h"; sourceTree = "<group>"; };
 		23AD08F519E052F20025A3D5 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		23AD08F919E09AE00025A3D5 /* DetailedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedEventViewController.swift; sourceTree = "<group>"; };
+		23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailedEventViewController.xib; path = ../DetailedEventViewController.xib; sourceTree = "<group>"; };
 		A02B47E019DFD631008948C9 /* SJMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02B47E419DFD631008948C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02B47E519DFD631008948C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,8 +144,10 @@
 				A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */,
 				A0F55B8419E003A3005AA968 /* SettingsViewController.swift */,
 				A02B47EC19DFD631008948C9 /* Main.storyboard */,
+				23AD08F919E09AE00025A3D5 /* DetailedEventViewController.swift */,
 				23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */,
 				23AD08F519E052F20025A3D5 /* EventViewController.swift */,
+				23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */,
 				A02B47EF19DFD631008948C9 /* Images.xcassets */,
 				A02B47F119DFD631008948C9 /* LaunchScreen.xib */,
 				A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */,
@@ -297,6 +303,7 @@
 				A0F55B9019E02F6D005AA968 /* BackBtn.png in Resources */,
 				A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */,
 				A02B47F019DFD631008948C9 /* Images.xcassets in Resources */,
+				23AD08FE19E0A0580025A3D5 /* DetailedEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +324,7 @@
 				23AD08F619E052F20025A3D5 /* EventViewController.swift in Sources */,
 				A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */,
 				A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */,
+				23AD08FA19E09AE10025A3D5 /* DetailedEventViewController.swift in Sources */,
 				A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */,
 				A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */,
 				23AD08F819E05F110025A3D5 /* CreateEventViewController.swift in Sources */,
