@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("OhO2pq62itytSvN4qtjDsA66peZ59ld7curwHqyH", clientKey: "qaJV5iRfFoRAoIwbaJcU9JsI21H5fqJQtuP5j1HS")
         
-        var object = PFObject(className: "Event")
-        object.addObject("Cal Hacks", forKey: "name")
-        // object.addObject("October 3, 2014", forKey: "date")
-        object.saveInBackground()
+        /* var object = PFObject(className: "Event")
+        var interests = ["Educational", "Hackathons"];
+        object.setObject("Test Event 2", forKey: "name")
+        object.setObject(interests, forKey: "categories")
+        object.setObject("October 3, 2014", forKey: "date")
+        object.saveInBackground() */
         
         return true
     }

@@ -19,6 +19,8 @@
 		23AD08E419DFE7350025A3D5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E319DFE7350025A3D5 /* Security.framework */; };
 		23AD08E619DFE73D0025A3D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E519DFE73D0025A3D5 /* StoreKit.framework */; };
 		23AD08E819DFE7450025A3D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */; };
+		23AD08F619E052F20025A3D5 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD08F519E052F20025A3D5 /* EventViewController.swift */; };
+		23AD08F819E05F110025A3D5 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */; };
 		A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E519DFD631008948C9 /* AppDelegate.swift */; };
 		A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */; };
 		A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */; };
@@ -59,6 +61,8 @@
 		23AD08E519DFE73D0025A3D5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		23AD08E919DFE89F0025A3D5 /* SJMeet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJMeet-Bridging-Header.h"; sourceTree = "<group>"; };
+		23AD08F519E052F20025A3D5 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		A02B47E019DFD631008948C9 /* SJMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02B47E419DFD631008948C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02B47E519DFD631008948C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */,
 				A0F55B8419E003A3005AA968 /* SettingsViewController.swift */,
 				A02B47EC19DFD631008948C9 /* Main.storyboard */,
+				23AD08F719E05F110025A3D5 /* CreateEventViewController.swift */,
+				23AD08F519E052F20025A3D5 /* EventViewController.swift */,
 				A02B47EF19DFD631008948C9 /* Images.xcassets */,
 				A02B47F119DFD631008948C9 /* LaunchScreen.xib */,
 				A02B47E719DFD631008948C9 /* SJMeet.xcdatamodeld */,
@@ -308,10 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AD08F619E052F20025A3D5 /* EventViewController.swift in Sources */,
 				A02B47EB19DFD631008948C9 /* MainMenuViewController.swift in Sources */,
 				A02B47E619DFD631008948C9 /* AppDelegate.swift in Sources */,
 				A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */,
 				A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */,
+				23AD08F819E05F110025A3D5 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
