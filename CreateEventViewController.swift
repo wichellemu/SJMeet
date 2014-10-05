@@ -15,6 +15,10 @@ class CreateEventController: UIViewController, UITextFieldDelegate, UITextViewDe
     @IBOutlet weak var descriptionTextbox: UITextView!
     @IBOutlet weak var createButton: UIButton!
     
+    
+    @IBOutlet weak var startTimePicker: UIDatePicker!
+    
+    @IBOutlet weak var endTimePicker: UIDatePicker!
     @IBAction func buttonClicked(sender: AnyObject) {
         println("Button was clicked", sender)
         

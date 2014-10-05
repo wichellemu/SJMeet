@@ -42,6 +42,7 @@
 		A09A7F1619E1163F00D3AE24 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1319E1163F00D3AE24 /* CreateEventViewController.swift */; };
 		A09A7F1719E1163F00D3AE24 /* DetailedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1419E1163F00D3AE24 /* DetailedEventViewController.swift */; };
 		A09A7F1819E1163F00D3AE24 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1519E1163F00D3AE24 /* EventViewController.swift */; };
+		A0DF092619E18C10004A2115 /* SaveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DF092519E18C10004A2115 /* SaveBtn.png */; };
 		A0F55B8219DFFF25005AA968 /* MainMenuMapBlurred.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */; };
 		A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55B8419E003A3005AA968 /* SettingsViewController.swift */; };
 		A0F55B8819E02071005AA968 /* SettingsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8719E02071005AA968 /* SettingsBtn.png */; };
@@ -102,6 +103,7 @@
 		A09A7F1319E1163F00D3AE24 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateEventViewController.swift; path = ../CreateEventViewController.swift; sourceTree = "<group>"; };
 		A09A7F1419E1163F00D3AE24 /* DetailedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailedEventViewController.swift; path = ../DetailedEventViewController.swift; sourceTree = "<group>"; };
 		A09A7F1519E1163F00D3AE24 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ../EventViewController.swift; sourceTree = "<group>"; };
+		A0DF092519E18C10004A2115 /* SaveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SaveBtn.png; sourceTree = "<group>"; };
 		A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuMapBlurred.png; sourceTree = "<group>"; };
 		A0F55B8419E003A3005AA968 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A0F55B8719E02071005AA968 /* SettingsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBtn.png; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				A0F55B8719E02071005AA968 /* SettingsBtn.png */,
 				A0F55B8B19E02BBE005AA968 /* EventsBtn.png */,
 				A0F55B8C19E02BBE005AA968 /* InteractiveMapBtn.png */,
+				A0DF092519E18C10004A2115 /* SaveBtn.png */,
 				A0F55B8F19E02F6D005AA968 /* BackBtn.png */,
 				A0F55B8919E021E2005AA968 /* NavBar.png */,
 			);
@@ -351,6 +354,7 @@
 				A0F55B9019E02F6D005AA968 /* BackBtn.png in Resources */,
 				A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */,
 				A02B47F019DFD631008948C9 /* Images.xcassets in Resources */,
+				A0DF092619E18C10004A2115 /* SaveBtn.png in Resources */,
 				23AD08FE19E0A0580025A3D5 /* DetailedEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

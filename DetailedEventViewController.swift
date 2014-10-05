@@ -10,25 +10,16 @@ import Foundation
 
 class DetailedEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var startTime: UILabel!
+    @IBOutlet weak var endTime: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     var eventID = "";
     
     @IBAction func backTapped(sender: AnyObject) {
-      /*  var eventVC = EventViewController(nibName: "EventViewController", bundle: nil)
-        self.presentViewController(eventVC, animated: true, completion: nil)*/
-        
-        /* var myStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var eventVC: EventViewController = myStoryboard.instantiateViewControllerWithIdentifier("EventVC") as EventViewController
-        self.navigationController?.pushViewController(eventVC, animated: true) */
-        
-     //  let eventVC:EventViewController = self.storyboard.instantiateViewControllerWithIdentifier("EventVC")
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-        
-       // self.navigationController!.pushViewController(eventVC, animated: true)
-        
-       /* UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-        UIViewController *initViewController = [storyBoard instantiateInitialViewController];
-        [self.window setRootViewController:initViewController];*/
     }
     
     // If user taps camera, allow photo to be taken
@@ -44,27 +35,6 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         }
         
     }
-    
-    
-    /* - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-    {
-    // Access the uncropped image from info dictionary
-    UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-    
-    // Dismiss controller
-    [picker dismissModalViewControllerAnimated:YES];
-    
-    // Resize image
-    UIGraphicsBeginImageContext(CGSizeMake(640, 960));
-    [image drawInRect: CGRectMake(0, 0, 640, 960)];
-    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    // Upload image
-    NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
-    [self uploadImage:imageData];
-    } */
-    
     
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!) {
@@ -95,15 +65,24 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
                 NSLog("%@", error)
             }
         }
-        
-        
-        
-        // let selectedImage : UIImage = image
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var query2 = PFQuery(className: "Event");
+        query2.whereKey("objectId", equalTo: eventID)
+        var event = query2.getFirstObject()
+        
+        var query = PFQuery(className: "Photos");
+        query.whereKey("event", equalTo: event);
+        var photos = query.findObjects();
+        
+        eventName.text = event.objectForKey("name") as? String
+        locationName.text = event.objectForKey("eventVenue") as? String
+        // startTime.text = event.objectForKey("startDate") as? String
+        // endTime.text = event.objectForKey("endDate") as? String
+        descriptionLabel.text = event.objectForKey("description") as? String
         
         
     }
