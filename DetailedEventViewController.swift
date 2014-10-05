@@ -8,17 +8,27 @@
 
 import Foundation
 
-class DetailedEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate/*, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout*/ {
+class DetailedEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate /*, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout */ {
     
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var endTime: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-  //  @IBOutlet weak var photoGallery: UICollectionView!
     
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image4: UIImageView!
+    @IBOutlet weak var image5: UIImageView!
+    @IBOutlet weak var image6: UIImageView!
+    
+    // @IBOutlet weak var photoGallery: UICollectionView!
+    
+    // var collectionView: UICollectionView?
     var eventID = "";
-    
+    var arrayOfPics: [UIImage] = []
+
     @IBAction func backTapped(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -68,21 +78,27 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         }
     }
     
-   /* func numberOfSections() -> Int {
-        
+    /* func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayOfPics.count
     }
     
-    func numberOfItemsInSection(_ section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
         
-    }*/
-    
-    
+        // [cell.galleryImage setImage:[UIImage imageWithContentsOfFile:[imageArray objectAtIndex:indexPath.row]]];
+        
+        // cell.contentView.image = arrayOfPics[forIndexPath: indexPath]
+        
+        // cell.backgroundColor = UIColor.orangeColor()
+
+        
+        cell.contentView.backgroundColor = UIColor(patternImage: arrayOfPics[indexPath.row])
+        
+        return cell
+    } */
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //photoGallery.dataSource = self
-        //photoGallery.delegate = self
         
         var query2 = PFQuery(className: "Event");
         query2.whereKey("objectId", equalTo: eventID)
@@ -91,7 +107,6 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         var query = PFQuery(className: "Photos");
         query.whereKey("event", equalTo: event);
         var photos = query.findObjects();
-        var arrayOfPics: [UIImage] = []
         var obj: PFObject
         for obj in photos {
             var imageFile: PFFile? = obj.objectForKey("photo") as? PFFile
@@ -113,6 +128,47 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         var end = dateFormatter.stringFromDate(event.objectForKey("endDate") as NSDate)
         startTime.text = "Starts at " + start;
         endTime.text = "Ends at " + end;
+        
+        // Cheap fix
+        if(arrayOfPics.count >= 1) {
+            image1.image = arrayOfPics[0];
+        }
+        
+        if(arrayOfPics.count >= 2) {
+            image2.image = arrayOfPics[1];
+        }
+        
+        if(arrayOfPics.count >= 3) {
+            image3.image = arrayOfPics[2];
+        }
+        
+        if(arrayOfPics.count >= 4) {
+            image4.image = arrayOfPics[3];
+        }
+        
+        if(arrayOfPics.count >= 5) {
+            image5.image = arrayOfPics[4];
+        }
+        
+        if(arrayOfPics.count >= 6) {
+            image6.image = arrayOfPics[5];
+        }
+        
+        /* photoGallery!.dataSource = self
+        photoGallery!.delegate = self
+        
+        photoGallery!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        photoGallery!.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(photoGallery!) */
+        /* let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 200, height: 300)
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView!.dataSource = self
+        collectionView!.delegate = self
+        collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView!.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(collectionView!) */
         
     }
     
