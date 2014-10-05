@@ -6,15 +6,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailedEventViewController" customModule="SJMeet" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="TUV-L9-aW9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="elI-Vv-SLY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-9l-zaS">
+                    <rect key="frame" x="266" y="26" width="46" height="37"/>
+                    <state key="normal" image="CameraBtn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cameraTapped:" destination="-1" eventType="touchUpInside" id="4BB-oB-x7j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFr-lM-XRD">
+                    <rect key="frame" x="8" y="31" width="33" height="28"/>
+                    <state key="normal" backgroundImage="BackBtn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="4bW-9O-BzI"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="BackBtn.png" width="48" height="40"/>
+        <image name="CameraBtn.png" width="46" height="37"/>
+    </resources>
 </document>

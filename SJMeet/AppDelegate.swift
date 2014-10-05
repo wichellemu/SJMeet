@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.setApplicationId("OhO2pq62itytSvN4qtjDsA66peZ59ld7curwHqyH", clientKey: "qaJV5iRfFoRAoIwbaJcU9JsI21H5fqJQtuP5j1HS")
-        
+                
         /* var object = PFObject(className: "Event")
         var interests = ["Educational", "Hackathons"];
         object.setObject("Test Event 2", forKey: "name")
