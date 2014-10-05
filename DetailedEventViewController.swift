@@ -80,10 +80,17 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         
         eventName.text = event.objectForKey("name") as? String
         locationName.text = event.objectForKey("eventVenue") as? String
-        // startTime.text = event.objectForKey("startDate") as? String
-        // endTime.text = event.objectForKey("endDate") as? String
         descriptionLabel.text = event.objectForKey("description") as? String
         
+        // startTime.text = event.objectForKey("startDate") as? String
+        // endTime.text = event.objectForKey("endDate") as? String
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "EEE MMM dd 'at' hh:mm a"
+        // dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a"
+        var start = dateFormatter.stringFromDate(event.objectForKey("startDate") as NSDate)
+        var end = dateFormatter.stringFromDate(event.objectForKey("endDate") as NSDate)
+        startTime.text = "Starts at " + start;
+        endTime.text = "Ends at " + end;
         
     }
     

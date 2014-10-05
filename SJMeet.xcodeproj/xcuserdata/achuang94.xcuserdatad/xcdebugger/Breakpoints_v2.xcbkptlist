@@ -207,36 +207,6 @@
             endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SJMeet.GoogleMapsViewController.viewDidLoad (SJMeet.GoogleMapsViewController)() -&gt; ()"
-                  moduleName = "SJMeet"
-                  urlString = "file:///Users/achuang94/Documents/UCSD/Cal%20Hacks/SJMeet/SJMeet/GoogleMapsViewController.swift"
-                  timestampString = "434179102.336513"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "1747">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SJMeet.GoogleMapsViewController.viewDidLoad (SJMeet.GoogleMapsViewController)() -&gt; ()"
-                  moduleName = "SJMeet"
-                  urlString = "file:///Users/achuang94/Documents/UCSD/Cal%20Hacks/SJMeet/SJMeet/GoogleMapsViewController.swift"
-                  timestampString = "434179102.336665"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "1887">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

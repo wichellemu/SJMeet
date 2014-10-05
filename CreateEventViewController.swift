@@ -45,6 +45,8 @@ class CreateEventController: UIViewController, UITextFieldDelegate, UITextViewDe
             event.setObject(title, forKey: "name")
             event.setObject(location, forKey: "eventVenue")
             event.setObject(description, forKey: "description")
+            event.setObject(startTimePicker.date, forKey: "startDate")
+            event.setObject(endTimePicker.date, forKey: "endDate")
             event.saveInBackgroundWithBlock {
                 (success: Bool!, error: NSError!) -> Void in
                 if (success != nil) {
