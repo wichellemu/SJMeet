@@ -2,15 +2,13 @@
 //  MapViewViewController.swift
 //  SJMeet
 //
-//  Created by Aaron Chuang on 10/4/14.
+//  Created by David Dantas on 10/4/14.
 //  Copyright (c) 2014 Michelle Wu. All rights reserved.
 //
-
-/*import Foundation
+import Foundation
 import UIKit
 import MapKit
 import CoreLocation
-
 class MapViewViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var theMapView: MKMapView!
@@ -36,7 +34,7 @@ class MapViewViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         var berkeleyLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(berkeleyLocation, theSpan)
         
-        self.theMapView.setRegion(theRegion, animated: true)
+        //self.theMapView.setRegion(theRegion, animated: true)
         
         var berkeleyAnnotation = MKPointAnnotation();
         berkeleyAnnotation.coordinate = berkeleyLocation
@@ -45,24 +43,28 @@ class MapViewViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
         self.theMapView.addAnnotation(berkeleyAnnotation)
         
-        
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-/*
+    
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
-        let currentLocation = manager.location*/
-        /*
+        let currentLocation = manager.location
+        
         let center = CLLocationCoordinate2D(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         self.theMapView.setRegion(region, animated: true)
+        
+        var selfAnnotation = MKPointAnnotation();
+        selfAnnotation.coordinate = center
+        selfAnnotation.title = "You!"
+        selfAnnotation.subtitle = "an awesome person"
+        
+        self.theMapView.addAnnotation(selfAnnotation)
         
         /*let location = locations.last as CLLocation
         
@@ -79,8 +81,5 @@ class MapViewViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         self.theMapView.addAnnotation(selfAnnotation)
         */
         
-        
-        
-    }  */
-
-}*/
+    }
+}

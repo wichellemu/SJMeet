@@ -109,6 +109,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="theMapView" destination="uQx-Vm-KZw" id="bEQ-oG-kQ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nl-RO-yCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
