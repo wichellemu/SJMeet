@@ -8,13 +8,14 @@
 
 import Foundation
 
-class DetailedEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class DetailedEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate/*, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout*/ {
     
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var endTime: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+  //  @IBOutlet weak var photoGallery: UICollectionView!
     
     var eventID = "";
     
@@ -67,8 +68,21 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         }
     }
     
+   /* func numberOfSections() -> Int {
+        
+    }
+    
+    func numberOfItemsInSection(_ section: Int) -> Int {
+        
+    }*/
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //photoGallery.dataSource = self
+        //photoGallery.delegate = self
         
         var query2 = PFQuery(className: "Event");
         query2.whereKey("objectId", equalTo: eventID)
@@ -77,6 +91,14 @@ class DetailedEventViewController: UIViewController, UINavigationControllerDeleg
         var query = PFQuery(className: "Photos");
         query.whereKey("event", equalTo: event);
         var photos = query.findObjects();
+        var arrayOfPics: [UIImage] = []
+        var obj: PFObject
+        for obj in photos {
+            var imageFile: PFFile? = obj.objectForKey("photo") as? PFFile
+            var data: NSData = imageFile!.getData()
+            var image: UIImage = UIImage(data: data)
+            arrayOfPics.append(image)
+        }
         
         eventName.text = event.objectForKey("name") as? String
         locationName.text = event.objectForKey("eventVenue") as? String

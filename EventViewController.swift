@@ -63,6 +63,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "EventCell")
         }
         
+        cell!.textLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 18) // Font style
+        
         // println((events[indexPath.row]).objectForKey("name") as? String)
         cell!.textLabel?.text = (events[indexPath.row]).objectForKey("name") as? String
         // println(cell.textLabel?.text)

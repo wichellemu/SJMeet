@@ -20,7 +20,6 @@
 		23AD08E619DFE73D0025A3D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E519DFE73D0025A3D5 /* StoreKit.framework */; };
 		23AD08E819DFE7450025A3D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */; };
 		23AD08FE19E0A0580025A3D5 /* DetailedEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */; };
-		23AD090019E0E1790025A3D5 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD08FF19E0E1790025A3D5 /* GoogleMaps.framework */; };
 		23AD090419E0EE3C0025A3D5 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD090319E0EE3C0025A3D5 /* libc++.dylib */; };
 		23AD090619E0EECD0025A3D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD090519E0EECD0025A3D5 /* AVFoundation.framework */; };
 		23AD090819E0EED50025A3D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AD090719E0EED50025A3D5 /* CoreData.framework */; };
@@ -38,10 +37,14 @@
 		A02B47F019DFD631008948C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02B47EF19DFD631008948C9 /* Images.xcassets */; };
 		A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02B47F119DFD631008948C9 /* LaunchScreen.xib */; };
 		A02B47FF19DFD631008948C9 /* SJMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B47FE19DFD631008948C9 /* SJMeetTests.swift */; };
-		A05D6ABF19E11096005C5AAD /* CameraBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A05D6ABE19E11096005C5AAD /* CameraBtn.png */; };
 		A09A7F1619E1163F00D3AE24 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1319E1163F00D3AE24 /* CreateEventViewController.swift */; };
 		A09A7F1719E1163F00D3AE24 /* DetailedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1419E1163F00D3AE24 /* DetailedEventViewController.swift */; };
 		A09A7F1819E1163F00D3AE24 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09A7F1519E1163F00D3AE24 /* EventViewController.swift */; };
+		A0DA8E3D19E1A6F00044C75C /* Clock.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DA8E3C19E1A6F00044C75C /* Clock.png */; };
+		A0DA8E3F19E1A76E0044C75C /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DA8E3E19E1A76E0044C75C /* Location.png */; };
+		A0DA8E4119E1AA5C0044C75C /* CameraBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DA8E4019E1AA5C0044C75C /* CameraBtn.png */; };
+		A0DA8E4319E1B0030044C75C /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA8E4219E1B0020044C75C /* MapViewViewController.swift */; };
+		A0DA8E4519E1B0C70044C75C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DA8E4419E1B0C70044C75C /* MapKit.framework */; };
 		A0DF092619E18C10004A2115 /* SaveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DF092519E18C10004A2115 /* SaveBtn.png */; };
 		A0F55B8219DFFF25005AA968 /* MainMenuMapBlurred.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */; };
 		A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55B8419E003A3005AA968 /* SettingsViewController.swift */; };
@@ -77,7 +80,6 @@
 		23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		23AD08E919DFE89F0025A3D5 /* SJMeet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJMeet-Bridging-Header.h"; sourceTree = "<group>"; };
 		23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailedEventViewController.xib; path = ../DetailedEventViewController.xib; sourceTree = "<group>"; };
-		23AD08FF19E0E1790025A3D5 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../../Downloads/GoogleMaps-iOS-1.8.1/GoogleMaps.framework"; sourceTree = "<group>"; };
 		23AD090319E0EE3C0025A3D5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		23AD090519E0EECD0025A3D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23AD090719E0EED50025A3D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -99,10 +101,14 @@
 		A02B47F819DFD631008948C9 /* SJMeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJMeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02B47FD19DFD631008948C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02B47FE19DFD631008948C9 /* SJMeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJMeetTests.swift; sourceTree = "<group>"; };
-		A05D6ABE19E11096005C5AAD /* CameraBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraBtn.png; sourceTree = "<group>"; };
 		A09A7F1319E1163F00D3AE24 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateEventViewController.swift; path = ../CreateEventViewController.swift; sourceTree = "<group>"; };
 		A09A7F1419E1163F00D3AE24 /* DetailedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailedEventViewController.swift; path = ../DetailedEventViewController.swift; sourceTree = "<group>"; };
 		A09A7F1519E1163F00D3AE24 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ../EventViewController.swift; sourceTree = "<group>"; };
+		A0DA8E3C19E1A6F00044C75C /* Clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clock.png; sourceTree = "<group>"; };
+		A0DA8E3E19E1A76E0044C75C /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
+		A0DA8E4019E1AA5C0044C75C /* CameraBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraBtn.png; sourceTree = "<group>"; };
+		A0DA8E4219E1B0020044C75C /* MapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		A0DA8E4419E1B0C70044C75C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A0DF092519E18C10004A2115 /* SaveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SaveBtn.png; sourceTree = "<group>"; };
 		A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenuMapBlurred.png; sourceTree = "<group>"; };
 		A0F55B8419E003A3005AA968 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AD08DC19DFE70F0025A3D5 /* CoreLocation.framework in Frameworks */,
+				A0DA8E4519E1B0C70044C75C /* MapKit.framework in Frameworks */,
 				23AD091219E0EF030025A3D5 /* OpenGLES.framework in Frameworks */,
 				23AD091019E0EEF60025A3D5 /* libicucore.dylib in Frameworks */,
 				23AD090E19E0EEE90025A3D5 /* ImageIO.framework in Frameworks */,
@@ -132,10 +140,8 @@
 				23AD08E219DFE72D0025A3D5 /* QuartzCore.framework in Frameworks */,
 				23AD08E019DFE7260025A3D5 /* MobileCoreServices.framework in Frameworks */,
 				23AD08DE19DFE71E0025A3D5 /* libz.dylib in Frameworks */,
-				23AD08DC19DFE70F0025A3D5 /* CoreLocation.framework in Frameworks */,
 				23AD08DA19DFE6FD0025A3D5 /* CoreGraphics.framework in Frameworks */,
 				23AD08D819DFE6F50025A3D5 /* CFNetwork.framework in Frameworks */,
-				23AD090019E0E1790025A3D5 /* GoogleMaps.framework in Frameworks */,
 				23AD091419E0FF210025A3D5 /* GoogleMaps.framework in Frameworks */,
 				23AD08D619DFE6EF0025A3D5 /* AudioToolbox.framework in Frameworks */,
 				23AD08D419DFE68C0025A3D5 /* Parse.framework in Frameworks */,
@@ -180,6 +186,7 @@
 				A02B47EA19DFD631008948C9 /* MainMenuViewController.swift */,
 				A09A7F1319E1163F00D3AE24 /* CreateEventViewController.swift */,
 				A09A7F1419E1163F00D3AE24 /* DetailedEventViewController.swift */,
+				A0DA8E4219E1B0020044C75C /* MapViewViewController.swift */,
 				A09A7F1519E1163F00D3AE24 /* EventViewController.swift */,
 				A0F55B8419E003A3005AA968 /* SettingsViewController.swift */,
 				23AD08FD19E0A0580025A3D5 /* DetailedEventViewController.xib */,
@@ -221,9 +228,11 @@
 		A02B480819DFD8F9008948C9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A05D6ABE19E11096005C5AAD /* CameraBtn.png */,
 				A0F55B8019DFFF25005AA968 /* MainMenuMapBlurred.png */,
+				A0DA8E4019E1AA5C0044C75C /* CameraBtn.png */,
 				A0F55B8719E02071005AA968 /* SettingsBtn.png */,
+				A0DA8E3E19E1A76E0044C75C /* Location.png */,
+				A0DA8E3C19E1A6F00044C75C /* Clock.png */,
 				A0F55B8B19E02BBE005AA968 /* EventsBtn.png */,
 				A0F55B8C19E02BBE005AA968 /* InteractiveMapBtn.png */,
 				A0DF092519E18C10004A2115 /* SaveBtn.png */,
@@ -236,6 +245,7 @@
 		B9D4DD6219DFFB4C008D562F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0DA8E4419E1B0C70044C75C /* MapKit.framework */,
 				23AD091519E0FF690025A3D5 /* GoogleMaps.bundle */,
 				23AD091319E0FF210025A3D5 /* GoogleMaps.framework */,
 				23AD091119E0EF030025A3D5 /* OpenGLES.framework */,
@@ -246,7 +256,6 @@
 				23AD090719E0EED50025A3D5 /* CoreData.framework */,
 				23AD090519E0EECD0025A3D5 /* AVFoundation.framework */,
 				23AD090319E0EE3C0025A3D5 /* libc++.dylib */,
-				23AD08FF19E0E1790025A3D5 /* GoogleMaps.framework */,
 				23AD08E719DFE7450025A3D5 /* SystemConfiguration.framework */,
 				23AD08E519DFE73D0025A3D5 /* StoreKit.framework */,
 				23AD08E319DFE7350025A3D5 /* Security.framework */,
@@ -344,14 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F55B8A19E021E2005AA968 /* NavBar.png in Resources */,
-				A05D6ABF19E11096005C5AAD /* CameraBtn.png in Resources */,
 				23AD091619E0FF690025A3D5 /* GoogleMaps.bundle in Resources */,
 				A0F55B8D19E02BBE005AA968 /* EventsBtn.png in Resources */,
 				A02B47EE19DFD631008948C9 /* Main.storyboard in Resources */,
 				A0F55B8219DFFF25005AA968 /* MainMenuMapBlurred.png in Resources */,
 				A0F55B8819E02071005AA968 /* SettingsBtn.png in Resources */,
+				A0DA8E3F19E1A76E0044C75C /* Location.png in Resources */,
 				A0F55B8E19E02BBE005AA968 /* InteractiveMapBtn.png in Resources */,
+				A0DA8E3D19E1A6F00044C75C /* Clock.png in Resources */,
 				A0F55B9019E02F6D005AA968 /* BackBtn.png in Resources */,
+				A0DA8E4119E1AA5C0044C75C /* CameraBtn.png in Resources */,
 				A02B47F319DFD631008948C9 /* LaunchScreen.xib in Resources */,
 				A02B47F019DFD631008948C9 /* Images.xcassets in Resources */,
 				A0DF092619E18C10004A2115 /* SaveBtn.png in Resources */,
@@ -379,6 +390,7 @@
 				A09A7F1619E1163F00D3AE24 /* CreateEventViewController.swift in Sources */,
 				A02B47E919DFD631008948C9 /* SJMeet.xcdatamodeld in Sources */,
 				A0F55B8519E003A3005AA968 /* SettingsViewController.swift in Sources */,
+				A0DA8E4319E1B0030044C75C /* MapViewViewController.swift in Sources */,
 				A09A7F1719E1163F00D3AE24 /* DetailedEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

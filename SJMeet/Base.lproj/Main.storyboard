@@ -54,7 +54,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GgT-cx-z8k" kind="show" id="Zak-lY-vEO"/>
+                                    <segue destination="0oy-M1-uWs" kind="show" id="Ng7-9C-37a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-1X-ejd">
@@ -86,28 +86,33 @@
             </objects>
             <point key="canvasLocation" x="-2202" y="25"/>
         </scene>
-        <!--GoogleMapsVC-->
-        <scene sceneID="LEv-co-1fr">
+        <!--MapViewVC-->
+        <scene sceneID="T82-NW-f6T">
             <objects>
-                <viewController title="GoogleMapsVC" id="GgT-cx-z8k" customClass="GoogleMapsViewController" customModule="SJMeet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapViewVC" id="0oy-M1-uWs" customClass="MapViewViewController" customModule="SJMeet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SLk-NY-ACe"/>
-                        <viewControllerLayoutGuide type="bottom" id="KC0-wf-KL8"/>
+                        <viewControllerLayoutGuide type="top" id="n18-Zz-Rjv"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWM-AJ-aRm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ayv-os-Zro">
+                    <view key="view" contentMode="scaleToFill" id="6M0-Ko-CpZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uQx-Vm-KZw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1fb-x3-Jx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nl-RO-yCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2202" y="770"/>
+            <point key="canvasLocation" x="-2202" y="667"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="ufC-wZ-h7g">
@@ -337,6 +342,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainMenuMapBlurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="RoC-YU-rK1">
+                                <rect key="frame" x="-5" y="-3" width="331" height="576"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0n-9K-tJe">
                                 <rect key="frame" x="279" y="20" width="32" height="32"/>
                                 <state key="normal" image="SettingsBtn.png">
@@ -346,25 +354,14 @@
                                     <action selector="settingsTapped:" destination="ZI6-1a-tHZ" eventType="touchUpInside" id="mM2-8C-C53"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8AU-cU-3fB">
-                                <rect key="frame" x="16" y="60" width="288" height="426"/>
+                            <tableView clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8AU-cU-3fB">
+                                <rect key="frame" x="16" y="71" width="288" height="426"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="sxU-Qm-9rQ" id="gLv-1h-3wd"/>
                                     <outlet property="delegate" destination="sxU-Qm-9rQ" id="OQF-zp-ebU"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keD-bp-kAi">
-                                <rect key="frame" x="16" y="494" width="288" height="54"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="39"/>
-                                <state key="normal" title="Create Event">
-                                    <color key="titleColor" red="0.069850007350000007" green="0.37818444289999997" blue="0.081900059710000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1Po-ks-UcM" kind="show" id="X3A-am-YGm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-uN-dzw">
                                 <rect key="frame" x="10" y="21" width="33" height="28"/>
                                 <state key="normal" backgroundImage="BackBtn.png">
@@ -374,6 +371,17 @@
                                     <segue destination="ZI6-1a-tHZ" kind="popoverPresentation" popoverAnchorView="Kcn-uN-dzw" id="isy-7c-nYB">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keD-bp-kAi">
+                                <rect key="frame" x="16" y="505" width="288" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                <state key="normal" title="Create Event">
+                                    <color key="titleColor" red="0.069850007350000007" green="0.37818444289999997" blue="0.081900059710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1Po-ks-UcM" kind="show" id="X3A-am-YGm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -391,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Km3-CZ-hGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2281" y="-668"/>
+            <point key="canvasLocation" x="-2282" y="-647"/>
         </scene>
         <!--CreateEventVC-->
         <scene sceneID="OtK-rc-bVf">
@@ -431,7 +439,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Venue Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-kf-JUv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address of Venue" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-kf-JUv">
                                 <rect key="frame" x="33" y="101" width="255" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -468,12 +476,6 @@
                                     <!--2014-10-05 14:32:04 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6h-TL-vQF">
-                                <rect key="frame" x="116" y="200" width="88" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-eS-ef5" userLabel="Green Radius Header Bg">
                                 <rect key="frame" x="0.0" y="384" width="320" height="22"/>
                                 <color key="backgroundColor" red="0.069850007350000007" green="0.37818444289999997" blue="0.081900059710000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -482,8 +484,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wf-T4-fOk">
-                                <rect key="frame" x="116" y="384" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wf-T4-fOk">
+                                <rect key="frame" x="0.0" y="384" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6h-TL-vQF">
+                                <rect key="frame" x="0.0" y="200" width="320" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -507,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pnb-fe-NeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1830" y="-668"/>
+            <point key="canvasLocation" x="-1829" y="-647"/>
         </scene>
     </scenes>
     <resources>
@@ -519,7 +527,7 @@
         <image name="SettingsBtn.png" width="67" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hCu-vP-uWJ"/>
-        <segue reference="ruj-fj-U4r"/>
+        <segue reference="isy-7c-nYB"/>
+        <segue reference="cLf-Ru-Oqt"/>
     </inferredMetricsTieBreakers>
 </document>
